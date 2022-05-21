@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Egemen\\source\\repos\\kulturDelisiWebAPI\\kulturDelisiWebAPI\\kulturDelisiWebAPI.csproj": {}
+    "C:\\Users\\Egemen\\source\\repos\\kulturDelisiWebAPI\\WebServices\\kulturDelisiWebAPI\\kulturDelisiWebAPI\\kulturDelisiWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Egemen\\source\\repos\\kulturDelisiWebAPI\\kulturDelisiWebAPI\\kulturDelisiWebAPI.csproj": {
+    "C:\\Users\\Egemen\\source\\repos\\kulturDelisiWebAPI\\WebServices\\kulturDelisiWebAPI\\kulturDelisiWebAPI\\kulturDelisiWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Egemen\\source\\repos\\kulturDelisiWebAPI\\kulturDelisiWebAPI\\kulturDelisiWebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Egemen\\source\\repos\\kulturDelisiWebAPI\\WebServices\\kulturDelisiWebAPI\\kulturDelisiWebAPI\\kulturDelisiWebAPI.csproj",
         "projectName": "kulturDelisiWebAPI",
-        "projectPath": "C:\\Users\\Egemen\\source\\repos\\kulturDelisiWebAPI\\kulturDelisiWebAPI\\kulturDelisiWebAPI.csproj",
+        "projectPath": "C:\\Users\\Egemen\\source\\repos\\kulturDelisiWebAPI\\WebServices\\kulturDelisiWebAPI\\kulturDelisiWebAPI\\kulturDelisiWebAPI.csproj",
         "packagesPath": "C:\\Users\\Egemen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Egemen\\source\\repos\\kulturDelisiWebAPI\\kulturDelisiWebAPI\\obj\\",
+        "outputPath": "C:\\Users\\Egemen\\source\\repos\\kulturDelisiWebAPI\\WebServices\\kulturDelisiWebAPI\\kulturDelisiWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Egemen\\AppData\\Roaming\\NuGet\\NuGet.Config",

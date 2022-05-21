@@ -84,12 +84,15 @@ namespace kulturDelisiWebAPI.Controllers
         // POST: api/categories
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+      
         public async Task<ActionResult<category>> Postcategory(category category)
         {
           if (_context.Categories == null)
           {
               return Problem("Entity set 'DataContext.Categories'  is null.");
           }
+       
+
             _context.Categories.Add(category);
             await _context.SaveChangesAsync();
 

@@ -30,5 +30,10 @@ namespace kulturDelisiWebAPI.Models.categoryModel
         [Required]
         public Boolean isActive { get; set; }
 
+        public bool IsSelected
+        {
+            get { return false; }
+        }
+
     }
 }

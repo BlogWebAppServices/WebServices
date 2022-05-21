@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OxwYLY2+WgVtEkXmJ79Oqd0gVsteH8xiL0QgI6JFz2/9mVz38Pfn1KvKX2dT0JQTA1i2LO2BPGEwrnfweztfUg==",
+  "dgSpecHash": "wW0hscaFGdhZxtYqaGze/mdGqqUhGRF+0CEOtyIL/svuLoG8X3QSkYPDvcWD+iT4hG5UzVAfjZezWVn0YhN3MQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Egemen\\source\\repos\\kulturDelisiWebAPI\\kulturDelisiWebAPI\\kulturDelisiWebAPI.csproj",
+  "projectFilePath": "C:\\Users\\Egemen\\source\\repos\\kulturDelisiWebAPI\\WebServices\\kulturDelisiWebAPI\\kulturDelisiWebAPI\\kulturDelisiWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Egemen\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Egemen\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
