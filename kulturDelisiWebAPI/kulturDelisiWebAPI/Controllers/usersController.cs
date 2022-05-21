@@ -32,6 +32,12 @@ namespace kulturDelisiWebAPI.Controllers
             return await _context.Users.Where(x => x.isActive && !x.isDeleted).ToListAsync();
         }
 
+        //public async Task<IQueryable<UserDto>> GetUsers()
+        //{
+
+        //    return (IQueryable<UserDto>)await _context.Users.Where(x => x.isActive && !x.isDeleted).ToListAsync();
+        //}
+
         // GET: api/users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<user>> Getuser(int id)
