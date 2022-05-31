@@ -30,5 +30,9 @@ namespace kulturDelisiWebAPI.Models.contactModel
 
         public int? updateUser { get; set; }
 
+        public bool IsSelected
+        {
+            get { return false; }
+        }
     }
 }

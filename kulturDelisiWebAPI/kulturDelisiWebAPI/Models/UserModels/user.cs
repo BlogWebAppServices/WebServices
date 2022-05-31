@@ -23,6 +23,8 @@ namespace kulturDelisiWebAPI.Models.UserModels
 
         public string? phone { get; set; }
 
+        public string? city { get; set; }
+
         [Required]
         public string email { get; set; }
 

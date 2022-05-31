@@ -12,8 +12,8 @@ using kulturDelisiWebAPI.Data;
 namespace kulturDelisiWebAPI.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220531151302_usermodelcolumnsadded")]
-    partial class usermodelcolumnsadded
+    [Migration("20220531170459_cityadeedtouser")]
+    partial class cityadeedtouser
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -175,6 +175,9 @@ namespace kulturDelisiWebAPI.Migrations
 
                     b.Property<DateTime?>("birhtdate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("city")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("createdate")
                         .HasColumnType("datetime2");

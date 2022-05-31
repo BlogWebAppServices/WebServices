@@ -174,6 +174,9 @@ namespace kulturDelisiWebAPI.Migrations
                     b.Property<DateTime?>("birhtdate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("city")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("createdate")
                         .HasColumnType("datetime2");
 
