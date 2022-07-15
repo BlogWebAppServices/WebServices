@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace kulturDelisiWebAPI.Models.categoryModel
 {
@@ -29,6 +30,7 @@ namespace kulturDelisiWebAPI.Models.categoryModel
 
         [Required]
         public Boolean isActive { get; set; }
+
 
         public bool IsSelected
         {

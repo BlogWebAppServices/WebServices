@@ -32,6 +32,10 @@ namespace kulturDelisiWebAPI.Models.UserModels
         public string password { get; set; }
 
         public DateTime? birhtdate { get; set; }
+         
+        public string? profilePhoto { get; set; }
+
+        public string? userAbout { get; set; }
 
         [Required]
         public DateTime createdate { get; set; }

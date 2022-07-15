@@ -17,7 +17,7 @@ namespace kulturDelisiWebAPI.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.5")
+                .HasAnnotation("ProductVersion", "6.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -30,6 +30,9 @@ namespace kulturDelisiWebAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
 
+                    b.Property<int>("categoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("content")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -37,9 +40,8 @@ namespace kulturDelisiWebAPI.Migrations
                     b.Property<DateTime>("createTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("createUser")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("createUser")
+                        .HasColumnType("int");
 
                     b.Property<bool>("isActive")
                         .HasColumnType("bit");
@@ -47,15 +49,23 @@ namespace kulturDelisiWebAPI.Migrations
                     b.Property<bool>("isDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<string>("metaDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("metaTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("updateTime")
+                    b.Property<DateTime?>("updateTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("updateUser")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("updateUser")
+                        .HasColumnType("int");
 
                     b.HasKey("id");
 
@@ -97,6 +107,44 @@ namespace kulturDelisiWebAPI.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("kulturDelisiWebAPI.Models.categoryModel.childCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("categoryName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("createDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("createUserId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("isActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("updateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("updateUserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("childCategories");
+                });
+
             modelBuilder.Entity("kulturDelisiWebAPI.Models.contactModel.contact", b =>
                 {
                     b.Property<int>("Id")
@@ -104,6 +152,9 @@ namespace kulturDelisiWebAPI.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("about")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("adress")
                         .HasColumnType("nvarchar(max)");
@@ -210,6 +261,9 @@ namespace kulturDelisiWebAPI.Migrations
                     b.Property<string>("phone")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("profilePhoto")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("surname")
                         .IsRequired()
                         .HasMaxLength(30)
@@ -217,6 +271,9 @@ namespace kulturDelisiWebAPI.Migrations
 
                     b.Property<DateTime?>("updatedate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("userAbout")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
 

@@ -14,16 +14,24 @@ namespace kulturDelisiWebAPI.Models.articleModel
         public string content { get; set; }
 
         [Required]
+        public string metaDescription { get; set; }
+
+        [Required]
+        public string metaTitle { get; set; }
+
+        [Required]
         public DateTime createTime { get; set; }
 
        
-        public DateTime updateTime { get; set; }
+        public DateTime? updateTime { get; set; }
 
         [Required]
-        public String createUser { get; set; }
+        public int createUser { get; set; }
 
+        [Required]
+        public int categoryId { get; set; }
 
-        public String? updateUser { get; set; }
+        public int? updateUser { get; set; }
 
         [Required]
         public Boolean isDeleted { get; set; }

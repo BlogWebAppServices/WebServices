@@ -21,6 +21,7 @@ namespace kulturDelisiWebAPI.Models.contactModel
 
         public string? twitterLlink { get; set; }
 
+        public string? about { get; set; }
         public DateTime? createDate {  get; set; }
 
         public DateTime? updateDate { get; set; }
